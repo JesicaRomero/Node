@@ -1,0 +1,37 @@
+{
+    "profesionals": [
+        {
+            "id": 1,
+            "name": "Jesica",
+            "age": 35,
+            "weight": 65,
+            "height": 160,
+            "isRetired": false,
+            "nationality": "Italiana",
+            "oscarNumber": 4,
+            "profession": "Actriz"
+        },
+        {
+            "id": 2,
+            "name": "Maria",
+            "age": 32,
+            "weight": 55,
+            "height": 167,
+            "isRetired": false,
+            "nationality": "Española",
+            "oscarNumber": 0,
+            "profession": "Directora"
+        },
+        {
+            "id": 3,
+            "name": "Juan",
+            "age": 19,
+            "weight": 55,
+            "height": 167,
+            "isRetired": false,
+            "nationality": "Española",
+            "oscarNumber": 0,
+            "profession": "Actor"
+        }
+    ]
+}
