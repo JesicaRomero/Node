@@ -1,9 +1,11 @@
 const express = require('express')
+const cors = require('cors')
 const functions = require('./functions')
 
 const app = express()
 const port = 3000
 app.use(express.json())
+app.use(cors())
 
 app.get('/profesional', (req, res) => {
   const profesionals = functions.getProfesionals()
@@ -18,7 +20,7 @@ app.put('/profesional', (req, res) => {
   const { id } = req.query
   const profesional = req.body
   functions.updateProfesional(id, profesional)
-  res.send('modifica')
+  res.json({ ok: true, message: 'Profesional actualizado' })
 })
 app.delete('/profesional', (req, res) => {
   const { id } = req.query
