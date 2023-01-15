@@ -1,5 +1,7 @@
-const Profesional = require('./Profesional')
 const fs = require('fs')
+const crypto = require('crypto')
+
+const Profesional = require('./Profesional')
 
 function readData() {
   const stringBBDD = fs.readFileSync(`${__dirname}/BBDD.json`, 'utf8')
@@ -17,7 +19,7 @@ function getProfesionals() {
 
 function createProfesional(profesional) {
   const data = readData()
-  const id = data.profesionals.length + 1
+  const id = crypto.randomUUID()
   const {
     name,
     age,
@@ -46,7 +48,7 @@ function createProfesional(profesional) {
 function updateProfesional(id, profesional) {
   const data = readData()
   const index = data.profesionals.findIndex((element) => element.id === id)
-  data.profesionals[index] = profesional
+  data.profesionals[index] = { id, ...profesional }
   writeData(data)
 }
 
