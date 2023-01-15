@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./stylesheets/global.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>IMDB</title>
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <div class="container">
+      <h1>Crear Pelicula</h1>
+      <input id="id" type="hidden" value="undefined" />
+      <input id="title" type="text" placeholder="Título" />
+      <input id="releaseYear" type="number" placeholder="Año de estreno" />
+      <input id="nationality" type="text" placeholder="Nacionalidad" />
+      <input id="genre" type="text" placeholder="Género" />
+      <button id="sendButton" onclick="createOrUpdateMovie()">Crear</button>
+      <section id="moviesSection">
+        <button onclick="showTable()">Mostrar películas</button>
+      </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="module" src="./scripts/navbar.js"></script>
+    <script src="./scripts/movie.js"></script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+{
+    "profesionals": [
+        {
+            "id": "6e6698db-0c90-42f0-84cf-2b3178a672cf",
+            "name": "Jesica",
+            "age": 35,
+            "weight": 65,
+            "height": 160,
+            "isRetired": false,
+            "nationality": "Italiana",
+            "oscarNumber": 7,
+            "profession": "Actriz"
+        },
+        {
+            "id": "70f0cd42-ee7b-4329-8470-5f4747e3caeb",
+            "name": "Maria",
+            "age": 32,
+            "weight": 55,
+            "height": 167,
+            "isRetired": false,
+            "nationality": "Española",
+            "oscarNumber": 0,
+            "profession": "Directora"
+        },
+        {
+            "id": "aa2aad51-0cd0-4803-8fae-25391651e123",
+            "name": "Luis",
+            "age": 80,
+            "weight": 85,
+            "height": 190,
+            "isRetired": false,
+            "nationality": "Americano",
+            "oscarNumber": 3,
+            "profession": "Guionista"
+        }
+    ],
+    "movies": [
+        {
+            "id": "8e20a8e0-3d34-4b83-9a83-ac28ca2c0ef1",
+            "title": "Titanic",
+            "releaseYear": 1997,
+            "nationality": "Estadounidense",
+            "genre": "Drama"
+        }
+    ]
+}
